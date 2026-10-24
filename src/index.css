@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "./portfolio-theme.css";
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(14, 165, 233, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(14, 165, 233, 0.06) 1px, transparent 1px);
+  }
+  
+  .bg-dots-pattern {
+    background-size: 24px 24px;
+    background-image: radial-gradient(rgba(56, 189, 248, 0.15) 1.5px, transparent 1.5px);
+  }
+
+  .glow-soft {
+    box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.18), 0 0 20px -5px rgba(56, 189, 248, 0.12);
+  }
+
+  .glow-card {
+    box-shadow: 0 4px 20px -2px rgba(14, 165, 233, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+  }
+
+  .glow-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .glow-hover:hover {
+    box-shadow: 0 16px 36px -8px rgba(14, 165, 233, 0.22), 0 0 0 1px rgba(56, 189, 248, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.04);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+

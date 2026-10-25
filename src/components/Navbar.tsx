@@ -224,7 +224,7 @@ export const Navbar: React.FC = () => {
             <div className="mt-3.5 pt-3 border-t border-sky-100 flex items-center justify-between gap-3 text-xs text-slate-500 max-w-2xl mx-auto">
               <span className="font-medium text-slate-600">Priyadharshini R • Data Analyst</span>
               <a
-                href="/assets/aistudio/resume_dd9d78a3.pdf"
+                href="/assets/aistudio/resume_b891b5cc.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-100/80 text-blue-700 font-bold hover:bg-[#2563eb] hover:text-white transition-all text-xs shadow-xs"

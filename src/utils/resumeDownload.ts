@@ -1,9 +1,9 @@
 /**
  * Bulletproof helper to download the user's authentic newly uploaded resume PDF
- * Guaranteed to download the exact Priya_Dharshini_Resume.pdf document without corruption
+ * Guaranteed to download the exact Priyadharshini_R_Resume.pdf document without corruption
  */
-export const downloadResumePdf = async (filename = 'Priya_Dharshini_Resume.pdf'): Promise<boolean> => {
-  const pdfPath = '/Priya_Dharshini_Resume.pdf';
+export const downloadResumePdf = async (filename = 'Priyadharshini_R_Resume.pdf'): Promise<boolean> => {
+  const pdfPath = '/assets/aistudio/resume_b891b5cc.pdf';
   
   try {
     const response = await fetch(pdfPath, {
@@ -57,6 +57,5 @@ export const downloadResumePdf = async (filename = 'Priya_Dharshini_Resume.pdf')
 };
 
 export const viewResumePdf = () => {
-  window.open('/Priya_Dharshini_Resume.pdf', '_blank');
+  window.open('/assets/aistudio/resume_b891b5cc.pdf', '_blank');
 };
-
